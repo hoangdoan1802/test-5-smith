@@ -8,7 +8,7 @@ describe OfficeWorker do
   describe :age do
     let(:office_worker)   { create :user, dob: '18-02-1992' }
     it "has the proper age" do
-      expect(office_worker.age(office_worker.dob)).to eql(23)
+      expect(office_worker.age).to eql(23)
     end
   end
 end
