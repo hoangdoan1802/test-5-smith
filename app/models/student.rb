@@ -1,4 +1,5 @@
 class Student < User
+	include Seeds::Student
   validate :dob_18
 
   has_many :schools_users, foreign_key: "user_id"
