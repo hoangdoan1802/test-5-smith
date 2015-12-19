@@ -30,6 +30,7 @@ ActiveRecord::Schema.define(version: 20151219030335) do
     t.datetime "created_at"
     t.datetime "updated_at"
     t.integer  "year_of_exp"
+    t.string   "type"
   end
 
 end
