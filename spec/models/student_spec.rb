@@ -7,4 +7,9 @@ describe Student do
       expect(student.age).to eql(18)
     end
   end
+
+  context 'Association' do
+    it { is_expected.to have_many :schools_users }
+    it { is_expected.to have_many :schools }
+  end
 end
